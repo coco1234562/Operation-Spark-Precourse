@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Style Tag for CSS-->
+	<style>
+
+	table {
+	margin: 20px;
+	}
+
+	table,
+	th,
+	td {
+	padding: 4px;
+	border: 1px solid black;
+	}
+
+
+	.example-form {
+  /* Just to center the form on the page, use: margin: 0 auto;*/
+  margin: 20px;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+.example-form div + div {
+  margin-top: 1em;
+}
+
+.example-form label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+}
+
+.example-form input,
+.example-form textarea {
+  /* To make sure that all text fields have the same font settings
+  By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  /* To give the same size to all text field */
+  width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+.example-form input:focus,
+.example-form textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+.example-form textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+  /* To give enough room to type some text */
+  height: 5em;
+  /* To allow users to resize any textarea vertically
+  It does not work on every browsers */
+  resize: vertical;
+}
+
+	</style>
+
+
+	<!-- Make a Title-->
+	<title>A Well of HTML</title>
+</head>
+<body>
+	
+	Hello World!
+	
+	<!--Create text headings using tags <h1></h1> through <h6></h6>.-->
+	<h1>Hello!</h1>
+	<h2>My</h2>
+	<!--Create a hyperlink using the anchor tag-->
+	<h3><a href="www.google.com">Name</a></h3>
+	<h4>is</h4>
+	<h5>Christina!</h5>
+	<h6>Have a great day!</h6>
+
+	
+	<!-- Create some paragraphs with text using <p></p>.-->
+	<p>Ea sed magna voluptate culpa nisi reprehenderit ex deserunt fugiat ex ut officia magna reprehenderit et consectetur. Proident dolore eu do dolor aliqua ad eiusmod laborum nulla est ut dolor eiusmod do.</p>
+	
+
+	<!-- Within a paragraph, add bold, italics, and emphasis with <b></b>, <i></i> or <em></em>, or <strong></strong>. !-->
+	<p>Ea sed magna voluptate culpa nisi reprehenderit ex <b>deserunt</b> fugiat ex ut <strong>officia magna </strong><i>reprehenderit</i> et consectetur. Proident dolore eu do dolor <em>aliqua ad</em> eiusmod laborum nulla est ut dolor eiusmod do.</p>	
+	
+	<!-- Create an image tag and give it an src attribute that is set to one of the image paths in the img/ directory, as in, <img src="img/cherries.jpg" />. Notice the slash before the end of the img tag: />. The img tag is an example of a self-closing tag and doesn’t need </img>.-->
+	<h1><img src="img/cherries.jpg" /></h1>
+	
+	
+	<!--Create a <ul></ul>, with several <li></li>.-->
+	Grocery List!
+	<ul>
+		<li>Eggs</li>
+		<li>Bread Flour</li>
+		<li>Dog Food</li>
+		<li>Taco</li>
+		<li>Bird Food</li>
+		<li>Yogurt</li>
+		<li>5 Gallons of Water</li>
+	</ul>
+	
+	<!--Create a <ol></ol>, with several <li></li>.-->
+	This is an Ordered List: 
+	<ol>
+		<li>Step 1.</li>
+		<li>Step 2</li>
+		<li>Step 3</li>
+		<li>Step 4</li>
+		<li>Step 5</li>
+	</ol>
+	
+	<!-- Create a <dl></dl>, with several <dt></dt> and <dd></dd>..-->
+	<dl>
+		<dt>Louisiana</dt>
+		<dd>A very hot state</dd>
+		<dt>Texas</dt>
+		<dd>Is a big state</dd>
+	</dl>
+
+	
+	<!-- Create a <dl></dl>, with several <dt></dt> and <dd></dd>..-->
+	<div>
+		<p>This is the content of the first div.</p>
+	</div>
+	
+	<div>
+		<h2>Second Div</h2>
+		<p>This is the content of the second div.</p>
+		<a href="#">A link inside the second div</a>
+	</div>
+	
+	<div>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+	</div>
+	
+	<div>
+		<h3>Fourth Div</h3>
+		<p>Some more content here.</p>
+		<img src="image.jpg" alt="An image">
+	</div>
+	
+	<div>
+		<h4>Last Div</h4>
+		<p>This is the final div with its own content.</p>
+	</div>
+
+	
+	
+	<!-- Create a <table></table>, with several <tr></tr>, each with the same number of <td></td>. -->
+	<table>
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="2">Names of students in class of 2020...</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>Bob</td>
+				<td>Harrison</td>
+			</tr>
+			<tr>
+				<td>Judy</td>
+				<td>Dorsy</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+	<!--Create a <form></form>, with several different types of <input />s.-->
+	<form class="example-form">
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" />
+		</div>
+		<div>
+			<label for="mail">E-mail:</label>
+			<input type="email" id="mail" />
+		</div>
+		<div>
+			<label for="msg">Message:</label>
+			<textarea id="msg"></textarea>
+		</div>
+		<button type="submit">Send your message</button>
+	</form>
+
+	
+</body>
+</html>
